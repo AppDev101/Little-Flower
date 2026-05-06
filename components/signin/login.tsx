@@ -4,7 +4,7 @@ function Login({ className }: { className?: string }) {
   return (
     <button
       className={cn(
-        "h-15 w-[calc(100%-24px)] cursor-pointer rounded-2xl bg-black/10 px-6 md:mx-0 md:h-8 md:w-auto md:px-4 lg:h-10 lg:px-6",
+        "h-15 w-[calc(100%-24px)] cursor-pointer rounded-2xl bg-white px-6 md:mx-0 md:h-8 md:w-auto md:px-4 lg:h-10 lg:px-6",
         className,
       )}
     >

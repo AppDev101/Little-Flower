@@ -30,7 +30,7 @@ function HeaderMenu() {
         />
       )}
       <div
-        className={`absolute top-full flex h-[calc(100svh-100%)] w-full flex-col items-center gap-y-2 bg-white shadow-[inset_0rem_1rem_1rem_-1rem_#c5c6c7] md:visible md:relative md:top-0 md:h-full md:flex-row md:text-[0.8125rem] min-[57.5rem]:text-base lg:text-base ${(!showMenu || enabledDropdown) && "invisible"}`}
+        className={`absolute top-full z-1 flex h-[calc(100svh-100%)] w-full flex-col items-center gap-y-2 bg-white font-semibold shadow-[inset_0rem_1rem_1rem_-1rem_#c5c6c7] md:visible md:relative md:top-0 md:h-full md:flex-row md:bg-transparent md:text-[0.8125rem] min-[57.5rem]:text-base lg:text-base ${(!showMenu || enabledDropdown) && "invisible"}`}
       >
         <NavMenu />
         <Login />

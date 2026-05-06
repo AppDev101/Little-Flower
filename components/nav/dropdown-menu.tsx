@@ -17,7 +17,7 @@ function DropdownMenu<TData>({
     <ul
       className={cn(
         className,
-        "visible absolute top-0 flex w-screen flex-col gap-4 bg-white px-5 pt-4 pb-5 text-base font-semibold shadow-[0px_0px_15px_7px_rgba(0,0,0,0.05)] md:absolute md:top-full md:h-auto md:w-auto",
+        "visible absolute -top-3 flex w-screen flex-col gap-4 bg-white px-5 pt-4 pb-5 text-base font-semibold shadow-[0px_0px_15px_7px_rgba(0,0,0,0.05),inset_0rem_1rem_1rem_-1rem_#c5c6c7] md:absolute md:top-full md:h-auto md:w-auto",
       )}
     >
       {data.map((item: TData, index: number) => {

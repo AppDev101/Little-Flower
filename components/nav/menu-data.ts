@@ -23,8 +23,9 @@ export const defaultMenuItems: MenuItems[] = [
   //   subMenu: ["SubMenu11", "SubMenu12", "SubMenu13"],
   //   isActive: false,
   // },
-  { name: "Merch", href: "/merchandise", isActive: false },
-  { name: "Store", href: "/store", isActive: false },
+  { name: "Merch", href: "/merch", isActive: false },
+  // { name: "Store", href: "/store", isActive: false },
   { name: "About Us", href: "/about", isActive: false },
-  { name: "Contact Us", href: "/contact-us", isActive: false },
+  { name: "Location", href: "/location", isActive: false },
+  { name: "Contact Us", href: "/contact", isActive: false },
 ];
