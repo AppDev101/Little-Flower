@@ -13,7 +13,7 @@ function Search() {
     if (query) params.set("search", query);
     else params.delete("search");
 
-    router.replace(`${pathname}?${params.toString()}`);
+    router.replace(`${pathname}?${params.toString().toLowerCase()}`);
   }, 500);
 
   return (
