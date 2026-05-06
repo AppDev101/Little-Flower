@@ -9,7 +9,7 @@ export default function Home({
   searchParams: Promise<{ search: string }>;
 }) {
   return (
-    <main className="relative flex flex-col items-center justify-center">
+    <main className="relative flex h-[calc(100vh-5.75rem)] w-full flex-col items-center justify-center">
       <Image
         src="/coffee_shop.png"
         alt="coffee_shop"
