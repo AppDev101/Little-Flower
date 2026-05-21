@@ -1,5 +1,14 @@
+import GoogleMap from "@/components/map/google-map";
+
 function Location() {
-  return <div>Location page</div>;
+  return (
+    <>
+      <h1>Location page</h1>
+      <div>
+        <GoogleMap />
+      </div>
+    </>
+  );
 }
 
 export default Location;
