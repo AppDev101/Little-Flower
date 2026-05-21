@@ -18,7 +18,7 @@ export default function Home({
         loading="eager"
         className="h-full w-full object-cover lg:w-[85%]"
       />
-      <div className="absolute space-y-10 text-center">
+      <div className="absolute space-y-9.75 text-center">
         <p className="mx-auto w-[80%] rounded bg-black/10 text-center text-4xl leading-relaxed font-bold text-white">
           Start your day with a perfect cup of coffee!
         </p>

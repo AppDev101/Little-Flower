@@ -13,7 +13,7 @@ function HomeLink() {
     <Link
       ref={homeRef}
       href="/"
-      className="ml-7 size-14 shrink-0"
+      className="ml-7 h-14 w-45 shrink-0"
       onClick={() => {
         if (window.matchMedia("(max-width: 767px)").matches) setShowMenu(false);
       }}

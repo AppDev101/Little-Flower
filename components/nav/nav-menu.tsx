@@ -172,7 +172,7 @@ function NavMenu({ className }: { className?: string }) {
   return (
     <ul
       className={cn(
-        "flex w-full flex-col items-center justify-center gap-3 pt-3 pb-3 text-black/80 md:mx-auto md:h-full md:flex-row md:pt-0 md:pb-0 lg:gap-5 xl:gap-10",
+        "flex w-full flex-col items-center justify-center gap-3 pt-3 pb-3 md:mx-auto md:h-full md:flex-row md:gap-0 md:pt-0 md:pb-0 min-[57.5rem]:gap-2 lg:gap-5 xl:gap-10",
         className,
       )}
     >

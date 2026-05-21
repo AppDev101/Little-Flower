@@ -1,4 +1,4 @@
-import { searchAction } from "@/lib/utils/search";
+import { getInitialData, searchAction } from "@/lib/utils/search";
 
 async function ListResult({
   searchParams,
@@ -7,10 +7,15 @@ async function ListResult({
 }) {
   const { search } = await searchParams;
 
-  const results = await searchAction(search);
+  const results =
+    (await searchAction(search)).length > 0
+      ? await searchAction(search)
+      : search === undefined
+        ? await getInitialData()
+        : [];
 
   return (
-    <ul>
+    <ul className="h-32 overflow-auto">
       {results.map((item, index) => (
         <li key={index} className="mt-2 text-white">
           {item.name} - ${item.price}
