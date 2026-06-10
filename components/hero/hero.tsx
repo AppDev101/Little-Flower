@@ -9,7 +9,7 @@ const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
   return (
-    <section className="relative flex h-screen w-full flex-col items-center justify-center">
+    <section className="relative flex h-svh w-full flex-col items-center justify-center">
       <Image
         src="/espresso-surrounded-by-scattered-coffee-beans-dark-surface 1.png"
         alt="coffee_shop"
