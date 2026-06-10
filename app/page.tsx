@@ -9,7 +9,7 @@ export default function Home({
     <main className="absolute">
       <Hero searchParams={searchParams} />
 
-      <div>
+      <div className="absolute">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio adipisci
         soluta, corporis sed harum quas quisquam maxime optio. Necessitatibus
         aspernatur fugit cum quia modi perferendis quasi ea ut quas dignissimos.

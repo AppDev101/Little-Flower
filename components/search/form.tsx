@@ -17,7 +17,7 @@ function Search() {
   }, 500);
 
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form onSubmit={(e) => e.preventDefault()} className="mb-4">
       <label htmlFor="search" className="text-xl text-white">
         What would you like today?
       </label>

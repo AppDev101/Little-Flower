@@ -4,6 +4,9 @@ import { Suspense } from "react";
 import ListResult from "../search/list-result";
 import { Dancing_Script } from "next/font/google";
 import { SiBuymeacoffee, SiCoffeescript } from "react-icons/si";
+import { BiCoffeeTogo } from "react-icons/bi";
+import { PiCake } from "react-icons/pi";
+import Link from "next/link";
 
 const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
@@ -19,7 +22,7 @@ function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
         className="relative right-0 h-full w-full object-cover lg:w-[85%]"
       />
 
-      <div className="absolute mx-auto mt-23 space-y-9.75 text-center md:left-[13.22%]">
+      <div className="absolute mx-auto space-y-5 text-center md:left-[13.22%]">
         <p
           className={`mx-auto w-[80%] rounded bg-black/10 text-center text-4xl leading-relaxed font-bold text-white ${dancingScript.className}`}
         >
@@ -37,9 +40,26 @@ function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
         </Suspense>
       </div>
 
-      <div className="flex">
-        <SiCoffeescript />
-        <SiBuymeacoffee />
+      <div className="flex gap-x-10 py-4">
+        <Link href="#" className="space-y-1">
+          <SiCoffeescript className="mx-auto size-7" />
+          <span>Hot Coffee</span>
+        </Link>
+
+        <Link href="#" className="space-y-1">
+          <SiBuymeacoffee className="mx-auto size-7" />
+          <span>Cold Coffee</span>
+        </Link>
+
+        <Link href="#" className="space-y-1">
+          <BiCoffeeTogo className="mx-auto size-7" />
+          <span>Cup Coffee</span>
+        </Link>
+
+        <Link href="#" className="space-y-1">
+          <PiCake className="mx-auto size-7" />
+          <span>Dessert</span>
+        </Link>
       </div>
     </section>
   );
