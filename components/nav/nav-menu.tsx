@@ -6,9 +6,7 @@ import { DropdownMenuData, NavLink } from "./menu-data";
 import { usePathname } from "next/navigation";
 import Dropdown from "./dropdown";
 import Link from "next/link";
-import { useHomeNavContext } from "@/lib/hooks/home-nav-context";
-import { useNavMenuDataContext } from "@/lib/hooks/nav-menu-data-context";
-import { useHamburgerMenuContext } from "@/lib/hooks/hamburger-menu-context";
+import useNavMenuContext from "@/lib/hooks/use-nav-menu-context";
 
 // This component is responsible for rendering a single menu item in the navigation.
 // It supports both navigation links and dropdown menus.
@@ -62,9 +60,7 @@ function NavMenu({ className }: { className?: string }) {
   const dropdownMenuRef = useRef<Record<string, HTMLLIElement | null>>({});
   const navMenuRef = useRef<Record<string, HTMLLIElement | null>>({});
   const pathname = usePathname();
-  const homeNavRef = useHomeNavContext();
-  const { setShowMenu } = useHamburgerMenuContext();
-  const { menuItems, setMenuItems } = useNavMenuDataContext();
+  const { homeRef, setShowMenu, menuItems, setMenuItems } = useNavMenuContext();
 
   function toggleDropdown({ name, isActive }: DropdownMenuData) {
     const tempMenuItems = menuItems.map((menuItem) => {
@@ -129,7 +125,7 @@ function NavMenu({ className }: { className?: string }) {
         value?.contains(event.target as HTMLLIElement),
       );
 
-      const isHomeNavClicked = homeNavRef.current?.contains(
+      const isHomeNavClicked = homeRef.current?.contains(
         event.target as HTMLLinkElement,
       );
 

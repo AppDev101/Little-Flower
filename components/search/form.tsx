@@ -25,7 +25,7 @@ function Search() {
         type="search"
         id="search"
         onChange={(e) => handleSearch(e.target.value)}
-        className="mx-auto mt-2 block w-sm rounded-lg bg-white/70 px-3 py-1 text-black/80 focus:outline-none"
+        className="mx-auto mt-2 block w-full max-w-sm rounded-lg bg-white/70 px-3 py-1 text-black/80 focus:outline-none"
       />
     </form>
   );

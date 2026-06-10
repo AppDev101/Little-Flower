@@ -1,7 +1,6 @@
-import { useHamburgerMenuContext } from "@/lib/hooks/hamburger-menu-context";
-import { useNavMenuDataContext } from "@/lib/hooks/nav-menu-data-context";
 import { cn } from "@/lib/utils/cn";
 import { defaultMenuItems } from "./menu-data";
+import useNavMenuContext from "@/lib/hooks/use-nav-menu-context";
 
 function DropdownMenu<TData>({
   className,
@@ -10,14 +9,14 @@ function DropdownMenu<TData>({
   className?: string;
   data: TData[];
 }) {
-  const { setShowMenu } = useHamburgerMenuContext();
-  const { setMenuItems } = useNavMenuDataContext();
+  const { setShowMenu, setMenuItems } = useNavMenuContext();
 
   return (
     <ul
       className={cn(
         className,
-        "visible absolute -top-3 flex w-screen flex-col gap-4 bg-white px-5 pt-4 pb-5 text-base font-semibold shadow-[0px_0px_15px_7px_rgba(0,0,0,0.05),inset_0rem_1rem_1rem_-1rem_#c5c6c7] md:absolute md:top-full md:h-auto md:w-auto",
+        // "visible absolute -top-3 flex w-screen flex-col gap-4 bg-[#e2d9c8] px-5 pt-4 pb-5 text-base font-semibold shadow-[0px_0px_15px_7px_rgba(0,0,0,0.05),inset_0rem_1rem_1rem_-1rem_#c5c6c7] md:absolute md:top-full md:h-auto md:w-auto md:bg-white",
+        "visible absolute -top-3 flex w-screen flex-col gap-4 bg-[#e2d9c8] px-5 pt-4 pb-5 text-base font-semibold md:absolute md:top-full md:h-auto md:w-auto md:bg-white",
       )}
     >
       {data.map((item: TData, index: number) => {

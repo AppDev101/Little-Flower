@@ -1,13 +1,11 @@
 "use client";
 
-import { useHomeNavContext } from "@/lib/hooks/home-nav-context";
+import useNavMenuContext from "@/lib/hooks/use-nav-menu-context";
 import SiteIcon from "./icon";
-import { useHamburgerMenuContext } from "@/lib/hooks/hamburger-menu-context";
 import Link from "next/link";
 
 function HomeLink() {
-  const homeRef = useHomeNavContext();
-  const { setShowMenu } = useHamburgerMenuContext();
+  const { homeRef, setShowMenu } = useNavMenuContext();
 
   return (
     <Link

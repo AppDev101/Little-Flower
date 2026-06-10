@@ -1,22 +1,22 @@
-import HeaderMenu from "./header-menu";
-import HomeNavContextProvider from "@/lib/hooks/home-nav-context";
-import HamburgerMenuContextProvider from "@/lib/hooks/hamburger-menu-context";
-import NavMenuDataContextProvider from "@/lib/hooks/nav-menu-data-context";
+"use client";
+import { Open_Sans } from "next/font/google";
 import HomeLink from "./home-link";
+import HeaderMenu from "./header-menu";
+import useNavMenuContext from "@/lib/hooks/use-nav-menu-context";
 
-async function Nav() {
+const openSans = Open_Sans({ subsets: ["latin"], weight: "600" });
+
+function Navbar() {
+  const { showMenu } = useNavMenuContext();
+
   return (
-    <nav className="relative flex h-23 items-center bg-blue-200 text-black/80 shadow-[0_0.125rem_0.75rem_#c5c6c7] lg:text-lg">
-      <NavMenuDataContextProvider>
-        <HomeNavContextProvider>
-          <HamburgerMenuContextProvider>
-            <HomeLink />
-            <HeaderMenu />
-          </HamburgerMenuContextProvider>
-        </HomeNavContextProvider>
-      </NavMenuDataContextProvider>
+    <nav
+      className={`sticky top-0 z-10 flex h-23 w-full items-center bg-black/20 lg:text-lg ${openSans.className} ${showMenu && "max-md:bg-[#e2d9c8]"}`}
+    >
+      <HomeLink />
+      <HeaderMenu />
     </nav>
   );
 }
 
-export default Nav;
+export default Navbar;
