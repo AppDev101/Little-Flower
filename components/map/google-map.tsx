@@ -32,7 +32,7 @@ function GoogleMap() {
     initMap();
   }, []);
 
-  return <div ref={mapRef} style={{ height: "400px" }} />;
+  return <div ref={mapRef} style={{ height: "400px", width: "100vw" }} />;
 }
 
 export default GoogleMap;

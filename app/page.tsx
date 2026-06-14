@@ -1,4 +1,5 @@
 import Hero from "@/components/hero/hero";
+import SpecialCoffee from "@/components/special/special-coffee";
 
 export default function Home({
   searchParams,
@@ -6,8 +7,10 @@ export default function Home({
   searchParams: Promise<{ search: string }>;
 }) {
   return (
-    <main className="absolute">
+    <main className="relative -top-23 w-full lg:w-[85%]">
       <Hero searchParams={searchParams} />
+
+      <SpecialCoffee />
 
       <div className="absolute">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio adipisci

@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-10 flex h-23 w-full items-center bg-black/20 lg:text-lg ${openSans.className} ${showMenu && "max-md:bg-[#e2d9c8]"}`}
+      className={`sticky top-0 z-10 flex h-23 w-full items-center bg-white/5 lg:text-lg dark:bg-black/20 ${openSans.className} ${showMenu && "max-md:bg-[#e2d9c8]!"}`}
     >
       <HomeLink />
       <HeaderMenu />
