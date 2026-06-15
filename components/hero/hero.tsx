@@ -13,10 +13,10 @@ const dancingScript = Dancing_Script({ subsets: ["latin"] });
 function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
   return (
     <section className="flex h-svh flex-col items-center justify-center">
-      <div className="flex h-full w-full items-center justify-center bg-[url('/espresso-surrounded-by-scattered-coffee-beans-dark-surface.png')] bg-cover bg-right">
+      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url('/espresso-surrounded-by-scattered-coffee-beans-dark-surface.png')] bg-cover bg-right bg-no-repeat">
         <div className="mx-auto space-y-5 text-center md:ml-[13.22%]">
           <p
-            className={`mx-auto w-[80%] rounded bg-black/10 text-center text-4xl leading-relaxed font-bold text-white ${dancingScript.className}`}
+            className={`mx-auto w-[80%] rounded text-center text-4xl leading-relaxed font-bold text-white ${dancingScript.className}`}
           >
             Start your day with a perfect cup of coffee!
           </p>
