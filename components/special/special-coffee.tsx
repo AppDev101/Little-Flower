@@ -1,8 +1,10 @@
-import React from "react";
-
 function SpecialCoffee() {
   return (
-    <section className="relative h-svh w-full">Our Special Coffee</section>
+    <section className="h-svh w-full">
+      <h1 className="mx-auto w-fit text-2xl leading-22 font-bold">
+        OUR SPECIAL COFFEE
+      </h1>
+    </section>
   );
 }
 
