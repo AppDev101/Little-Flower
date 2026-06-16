@@ -33,7 +33,7 @@ function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
         </div>
       </div>
 
-      <div className="flex gap-x-10 px-4.25 py-4">
+      <div className="flex w-full justify-between px-4.25 py-4 text-[clamp(0.25rem,3.75vw,1rem)] max-[650px]:max-w-112.75 min-[651px]:w-[69.23%]">
         <Link href="#" className="space-y-1">
           <SiCoffeescript className="mx-auto size-7" />
           <span className="text-nowrap">Hot Coffee</span>
@@ -50,7 +50,7 @@ function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
         </Link>
 
         <Link href="#" className="space-y-1">
-          <PiCake className="mx-auto size-7" />
+          <PiCake className="mx-auto size-7 text-nowrap" />
           <span>Dessert</span>
         </Link>
       </div>
