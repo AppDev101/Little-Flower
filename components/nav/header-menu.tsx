@@ -5,7 +5,6 @@ import Join from "../join/join";
 import Login from "../signin/login";
 import NavMenu from "./nav-menu";
 import { TiThMenu } from "react-icons/ti";
-import { cn } from "@/lib/utils/cn";
 import useNavMenuContext from "@/lib/hooks/use-nav-menu-context";
 
 function HeaderMenu() {

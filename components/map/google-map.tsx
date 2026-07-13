@@ -9,7 +9,7 @@ function GoogleMap() {
     const initMap = async () => {
       setOptions({ key: process.env.NEXT_PUBLIC_MAPS_API_KEY, v: "weekly" });
 
-      const center = { lat: 11.232986600223937, lng: 124.98506705327324 };
+      const center = { lat: 11.232833, lng: 124.985049 };
 
       const { Map } = await importLibrary("maps");
       const { AdvancedMarkerElement } = await importLibrary("marker");
