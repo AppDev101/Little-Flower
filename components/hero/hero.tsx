@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Search from "../search/form";
 import { Suspense } from "react";
 import ListResult from "../search/list-result";
@@ -33,24 +32,24 @@ function Hero({ searchParams }: { searchParams: Promise<{ search: string }> }) {
         </div>
       </div>
 
-      <div className="flex w-full justify-between px-4.25 py-4 text-[clamp(0.25rem,3.75vw,1rem)] max-[650px]:max-w-112.75 min-[651px]:w-[69.23%]">
+      <div className="flex w-full justify-around bg-[#E2D9C8] px-4.25 py-4">
         <Link href="#" className="space-y-1">
-          <SiCoffeescript className="mx-auto size-7" />
+          <SiCoffeescript className="mx-auto size-7 min-[1187px]:size-10" />
           <span className="text-nowrap">Hot Coffee</span>
         </Link>
 
         <Link href="#" className="space-y-1">
-          <SiBuymeacoffee className="mx-auto size-7" />
+          <SiBuymeacoffee className="mx-auto size-7 min-[1187px]:size-10" />
           <span className="text-nowrap">Cold Coffee</span>
         </Link>
 
         <Link href="#" className="space-y-1">
-          <BiCoffeeTogo className="mx-auto size-7" />
+          <BiCoffeeTogo className="mx-auto size-7 min-[1187px]:size-10" />
           <span className="text-nowrap">Cup Coffee</span>
         </Link>
 
         <Link href="#" className="space-y-1">
-          <PiCake className="mx-auto size-7 text-nowrap" />
+          <PiCake className="mx-auto size-7 text-nowrap min-[1187px]:size-10" />
           <span>Dessert</span>
         </Link>
       </div>

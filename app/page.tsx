@@ -1,5 +1,5 @@
 import Hero from "@/components/hero/hero";
-import SpecialCoffee from "@/components/special/special-coffee";
+import Special from "@/components/special/special";
 
 export default function Home({
   searchParams,
@@ -11,9 +11,9 @@ export default function Home({
     <main className="relative -top-23 w-full min-[870px]:w-217.5 lg:w-[85%]">
       <Hero searchParams={searchParams} />
 
-      <SpecialCoffee />
+      <Special />
 
-      <div className="absolute">
+      <div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio adipisci
         soluta, corporis sed harum quas quisquam maxime optio. Necessitatibus
         aspernatur fugit cum quia modi perferendis quasi ea ut quas dignissimos.
