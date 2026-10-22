@@ -1,3 +1,5 @@
+import Explore from "@/components/explore/explore";
+import Footer from "@/components/footer/footer";
 import Hero from "@/components/hero/hero";
 import Special from "@/components/special/special";
 
@@ -13,11 +15,9 @@ export default function Home({
 
       <Special />
 
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio adipisci
-        soluta, corporis sed harum quas quisquam maxime optio. Necessitatibus
-        aspernatur fugit cum quia modi perferendis quasi ea ut quas dignissimos.
-      </div>
+      <Explore />
+
+      <Footer />
     </main>
   );
 }

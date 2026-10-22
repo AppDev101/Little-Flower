@@ -4,7 +4,7 @@ import { specialDessertData } from "../data";
 function SpecialDessert() {
   return (
     <>
-      <h1 className="mx-auto w-fit text-2xl leading-22 font-bold">
+      <h1 className="mx-auto w-fit text-2xl leading-35 font-bold">
         OUR SPECIAL DESSERT
       </h1>
 

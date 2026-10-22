@@ -16,7 +16,7 @@ function Card({ item }: { item: SpecialData }) {
       <p className="mt-0.5 line-clamp-3 h-12">{item.description}</p>
 
       <div className="mt-2 flex items-center justify-between">
-        <span className="font-semibold text-gray-500">
+        <span className="font-semibold text-gray-700">
           Php {item.price.toFixed(2)}
         </span>
         <button className="rounded-xl bg-black/80 px-4 py-1.5 text-nowrap text-white">

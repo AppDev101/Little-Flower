@@ -3,7 +3,7 @@ import SpecialDessert from "./dessert/special-dessert";
 
 function Special() {
   return (
-    <section className="max-[57.1875rem]:p-3.5">
+    <section className="pb-14.5 max-[57.1875rem]:p-3.5">
       <SpecialCoffee />
       <SpecialDessert />
     </section>
