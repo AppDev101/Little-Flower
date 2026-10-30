@@ -1,49 +1,59 @@
+"use client";
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaXTwitter,
 } from "react-icons/fa6";
+import { footerData } from "./data";
 
 function Footer() {
   return (
-    <div className="bg- flex justify-center gap-30 bg-taupe-800 py-15 text-white">
-      <h1 className="text-xl font-bold">COFFEE</h1>
-      <div className="space-y-2">
-        <h2 className="font-semibold">PRIVACY</h2>
-        <ul className="space-y-1 text-sm">
-          <li>Terms of use</li>
-          <li>Privacy policy</li>
-          <li>Cookie policy</li>
-        </ul>
+    <section className="@container flex flex-col items-center justify-center gap-7 bg-taupe-800 py-15 text-white min-[1205px]:flex-row min-[1205px]:justify-center min-[1205px]:gap-[clamp(60px,5vw,150px)]">
+      <h1 className="hidden text-2xl font-bold min-[600px]:block">
+        Little Flower
+      </h1>
+
+      <div className="order-2 flex flex-col gap-x-12 gap-y-2 min-[425px]:mx-10 min-[425px]:gap-y-8 min-[600px]:flex-row min-[1205px]:gap-[clamp(60px,5vw,150px)]">
+        {footerData.map(({ name, links }) => {
+          return (
+            <div
+              key={name}
+              className="flex flex-col flex-wrap gap-y-2 min-[425px]:basis-39 min-[425px]:items-center"
+            >
+              <h2
+                data-value={name}
+                className="hidden text-xs font-medium text-nowrap min-[600]:block min-[375px]:text-sm min-[425px]:font-semibold"
+              >
+                {name}
+              </h2>
+
+              <ul
+                data-name={name}
+                className="flex items-center text-[clamp(12px,2.7cqi,16px)] text-nowrap [&:not([data-name=PRIVACY])]:hidden"
+              >
+                {links.map(({ name }, index) => {
+                  return (
+                    <li
+                      key={name}
+                      className={`${index > 0 && "border-l-2"} px-5`}
+                    >
+                      {name}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
       </div>
-      <div className="space-y-2">
-        <h2 className="font-semibold">SERVICES</h2>
-        <ul className="space-y-1 text-sm">
-          <li>Shop</li>
-          <li>Order ahead</li>
-          <li>Menu</li>
-        </ul>
-      </div>
-      <div className="space-y-2">
-        <h2 className="font-semibold">ABOUT US</h2>
-        <ul className="space-y-1 text-sm">
-          <li>Find a location</li>
-          <li>About us</li>
-          <li>Our story</li>
-        </ul>
-      </div>
-      <div className="space-y-2">
-        <h2 className="font-semibold">INFORMATION</h2>
-        <ul className="space-y-1 text-sm">
-          <li>Plans & pricing</li>
-          <li>Sell your products</li>
-          <li>Jobs</li>
-        </ul>
-      </div>
-      <div className="space-y-3">
-        <h2 className="text-[1.125rem] font-semibold">SOCIAL MEDIA</h2>
-        <ul className="flex justify-center gap-3">
+
+      <div className="order-1 space-y-3">
+        <h2 className="hidden text-sm font-semibold text-nowrap">
+          SOCIAL MEDIA
+        </h2>
+
+        <ul className="flex justify-center gap-[clamp(50px,17cqi,100px)] text-[clamp(24px,8cqi,48px)]">
           <li>
             <FaXTwitter />
           </li>
@@ -58,7 +68,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
