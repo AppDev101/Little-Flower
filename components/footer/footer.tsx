@@ -9,12 +9,12 @@ import { footerData } from "./data";
 
 function Footer() {
   return (
-    <section className="@container flex flex-col items-center justify-center gap-10 bg-taupe-800 pt-13 pb-10 text-white min-[1205px]:flex-row min-[1205px]:justify-center min-[1205px]:gap-[clamp(60px,5vw,150px)]">
-      <h1 className="hidden text-2xl font-bold min-[600px]:block">
+    <section className="@container flex flex-col items-center justify-center gap-10 bg-taupe-800 pt-13 pb-10 text-white min-[1400px]:flex-row min-[1400px]:justify-center min-[1400px]:gap-x-[clamp(40px,5vw,150px)]">
+      <h1 className="hidden text-3xl font-bold text-nowrap min-[600px]:block">
         Little Flower
       </h1>
 
-      <div className="order-2 flex flex-col min-[600px]:flex-row min-[600px]:gap-x-10 min-[1205px]:gap-[clamp(60px,5vw,150px)]">
+      <div className="order-2 flex flex-col min-[600px]:flex-row min-[600px]:gap-x-[clamp(40px,6.67cqi,80px)] min-[1205px]:gap-[clamp(60px,5vw,150px)]">
         {footerData.map(({ name, links }) => {
           return (
             <div
@@ -23,14 +23,14 @@ function Footer() {
             >
               <h2
                 data-value={name}
-                className="hidden text-xs font-medium text-nowrap min-[600px]:block"
+                className="hidden text-nowrap min-[600px]:block min-[600px]:text-[clamp(16px,2.67cqi,20px)] min-[600px]:font-semibold min-[1440px]:font-bold"
               >
                 {name}
               </h2>
 
               <ul
                 data-name={name}
-                className="flex items-center text-[clamp(12px,2.7cqi,16px)] text-nowrap min-[600px]:flex-col min-[600px]:gap-y-1.25 min-[600px]:text-xs [&:not([data-name=PRIVACY])]:hidden min-[600px]:[&:not([data-name=PRIVACY])]:flex"
+                className="flex items-center text-[clamp(12px,2.7cqi,16px)] text-nowrap min-[600px]:flex-col min-[600px]:gap-y-1.25 min-[600px]:text-[clamp(12px,2cqi,14px)] [&:not([data-name=PRIVACY])]:hidden min-[600px]:[&:not([data-name=PRIVACY])]:flex"
               >
                 {links.map(({ name }, index) => {
                   return (
@@ -49,7 +49,7 @@ function Footer() {
       </div>
 
       <div className="order-1 space-y-3 min-[600px]:order-last">
-        <h2 className="hidden text-sm font-semibold text-nowrap min-[600px]:block min-[600px]:text-center min-[600px]:text-base">
+        <h2 className="hidden text-sm font-semibold text-nowrap min-[600px]:block min-[600px]:text-center min-[600px]:text-[clamp(16px,2.67cqi,20px)] min-[1440px]:text-xl min-[1440px]:font-bold">
           SOCIAL MEDIA
         </h2>
 
