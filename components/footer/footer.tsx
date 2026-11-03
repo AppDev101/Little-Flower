@@ -6,12 +6,20 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { footerData } from "./data";
+import { Google_Sans } from "next/font/google";
+
+const googleSans = Google_Sans({ subsets: ["latin"] });
 
 function Footer() {
   return (
     <section className="@container flex flex-col items-center justify-center gap-10 bg-taupe-800 pt-13 pb-10 text-white min-[1400px]:flex-row min-[1400px]:justify-center min-[1400px]:gap-x-[clamp(40px,5vw,150px)]">
       <h1 className="hidden text-3xl font-bold text-nowrap min-[600px]:block">
         Little Flower
+        <span
+          className={`${googleSans.className} block text-center text-base font-medium tracking-[0.325em]`}
+        >
+          ―CAFE―
+        </span>
       </h1>
 
       <div className="order-2 flex flex-col min-[600px]:flex-row min-[600px]:gap-x-[clamp(40px,6.67cqi,80px)] min-[1205px]:gap-[clamp(60px,5vw,150px)]">
