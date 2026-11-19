@@ -43,11 +43,11 @@ function Join() {
         setApi={setApi}
         className="mt-5 min-w-68 min-[600px]:px-10"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-1.5">
           {customersData.map((customer, index) => (
             <CarouselItem
               key={customer.customerName}
-              className="basis-full min-[1060px]:basis-1/3"
+              className="basis-full pl-1.5 min-[1150px]:basis-1/3"
             >
               <CustomerCard
                 customerName={customer.customerName}

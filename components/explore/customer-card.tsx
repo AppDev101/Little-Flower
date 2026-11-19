@@ -19,7 +19,7 @@ function CustomerCard({
 }: customerCardProps) {
   return (
     <div
-      className={`${!customerSelected ? "scale-85 transform transition duration-600 ease-in" : "scale-96 transform ring-1 ring-gray-300 transition duration-600 ease-in"} relative mx-auto flex h-full max-w-90 min-w-61.75 flex-col rounded-xl bg-[#E2D9C8]/20 p-3 shadow-md`}
+      className={`${!customerSelected ? "scale-85 transform transition duration-600 ease-in" : "scale-96 transform ring-1 ring-gray-300 transition duration-600 ease-in"} relative mx-auto flex h-full max-w-90 min-w-61.75 flex-col rounded-xl bg-[#E2D9C8]/20 p-3 shadow-md min-[375px]:p-5`}
     >
       <div className="@container mb-2 flex justify-between">
         <div className="flex gap-2">
