@@ -51,7 +51,7 @@ function CustomerCard({
       </div>
 
       <div className="@container flex h-full items-center">
-        <p className="line-clamp-5 text-[clamp(0.75rem,4cqi,0.94rem)] text-balance">
+        <p className="line-clamp-5 text-justify text-[clamp(0.75rem,4cqi,0.94rem)]">
           {customerReview}
         </p>
       </div>

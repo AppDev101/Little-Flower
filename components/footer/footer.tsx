@@ -44,7 +44,7 @@ function Footer() {
                   return (
                     <li
                       key={name}
-                      className={`${index > 0 && "border-l-2 min-[600px]:border-none"} px-5 min-[600px]:px-0`}
+                      className={`${index > 0 && "border-l-2 min-[600px]:border-none"} px-4.75 min-[600px]:px-0`}
                     >
                       {name}
                     </li>

@@ -41,7 +41,7 @@ function Join() {
       <Carousel
         opts={{ align: "center", loop: true }}
         setApi={setApi}
-        className="mt-5 min-w-81.75 px-10"
+        className="mt-5 min-w-68 min-[600px]:px-10"
       >
         <CarouselContent>
           {customersData.map((customer, index) => (

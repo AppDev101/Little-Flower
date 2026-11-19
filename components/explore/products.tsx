@@ -14,7 +14,7 @@ function Products() {
         <button className="flex rounded-full bg-black py-1.5 pr-3.5 pl-5.5 text-nowrap text-white">
           {/* text-xs min-[691px]:text-sm"> */}
           Explore Our Products
-          <ChevronsRight className="ml-2 size-4.5" />
+          <ChevronsRight className="ml-2 size-4.5 translate-y-0.75" />
         </button>
       </div>
     </div>
